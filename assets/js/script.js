@@ -15,6 +15,8 @@ function preloadImage(url) {
 }
 function mainMenuService() {
 
+    let number = numberof;
+
 	$('.slider-carousel').owlCarousel({
 		loop: true,
 		margin: 0,
@@ -39,7 +41,7 @@ function mainMenuService() {
 				items: 3
 			},
 			1200: {
-				items: 4
+				items: number
 			}
 		}
 	});

@@ -741,6 +741,12 @@ a:hover {
     object-fit: cover;
 }
 
+
+.services.section .section-title .back-title {
+    font-size: 46px;
+}
+
+
 /* recommendations */
 .recommendations .recomm-item.card {
     padding: 25px;

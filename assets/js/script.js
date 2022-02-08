@@ -15,8 +15,6 @@ function preloadImage(url) {
 }
 function mainMenuService() {
 
-    let number = numberof;
-
 	$('.slider-carousel').owlCarousel({
 		loop: true,
 		margin: 0,
@@ -24,9 +22,9 @@ function mainMenuService() {
 		dots: false,
 		smartSpeed: 500,
 		autoplayTimeout: 2000,
-		autoplay: false,
+		autoplay: true,
+        autoplayTimeout:3000,
 		autoplayHoverPause: true,
-        // animateIn: 'flipInX',
 		responsive: {
 			0: {
 				items: 1
@@ -37,32 +35,16 @@ function mainMenuService() {
 			600: {
 				items: 2
 			},
-			800: {
+			900: {
 				items: 3
 			},
 			1200: {
-				items: number
+				items: 3
 			}
 		}
 	});
 
-    // responsive: {
-    //     0: {
-    //         items: 1
-    //     },
-    //     480: {
-    //         items: 1
-    //     },
-    //     600: {
-    //         items: 2
-    //     },
-    //     800: {
-    //         items: 3
-    //     },
-    //     1200: {
-    //         items: 4
-    //     }
-    // }
+
 
 }
 
@@ -117,6 +99,8 @@ $(document).ready(function () {
         nav: false,
         dots: false,
         items: 1,
+        autoplay:true,
+        autoplayTimeout:2800,
     });
 
     setTimeout(() => {

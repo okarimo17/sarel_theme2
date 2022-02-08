@@ -153,20 +153,6 @@ a:hover {
     color: #fff;
     border: 2px solid #fff;
 }
-/* .styled-btn::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: #000;
-    transform: translateX(-100%);
-    transition: .2s all linear;
-}
-.styled-btn:hover::before{
-    transform: translateX(0%);
-} */
 @media screen and (max-width:1120px) {
     .styled-btn {
         padding: 8px 20px;
@@ -177,7 +163,7 @@ a:hover {
 .card {
     text-align: left;
     background: #fff;
-    padding: 50px;
+    /* padding: 50px; */
     margin-bottom: 0px;
     transition: all 250ms ease-in-out;
     -webkit-transition: all 250ms ease-in-out;
@@ -188,6 +174,35 @@ a:hover {
     cursor: pointer;
     margin-bottom: 20px;
 }
+
+
+
+/* responsive */
+
+@media screen and (max-width:800px) {
+    .section .section-title .back-title{
+        font-size: 25px;
+    }
+    .section .section-title .back-title{ 
+        font-size: 22px;
+    }  
+}
+@media screen and (max-width: 690px){
+    .section .section-title .front-title{
+        line-height: initial;
+    }
+}
+@media screen and (max-width: 300px){
+    .section .back-title {
+        display: none;
+        /* font-size: 14px; */
+    }
+    .section .section-title .front-title{
+        font-size: 16px;
+        line-height: initial;
+    }
+}
+
 
 
 /* THEME START*/
@@ -659,5 +674,100 @@ a:hover {
     100% {
         opacity: 1;
         width: 100%;
+    }
+}
+
+
+/* SERVICE SECTION */
+.services .service-item {
+    /* text-align: left; */
+    /* background: #fff; */
+    /* transition: all 250ms ease-in-out; */
+    /* -webkit-transition: all 250ms ease-in-out; */
+    /* box-shadow: 0 0 25px rgb(0 0 0 / 10%); */
+    /* -webkit-box-shadow: 0 0 25px rgb(0 0 0 / 10%); */
+    /* -moz-box-shadow: 0 0 25px rgba(0,0,0,.1); */
+    /* -ms-box-shadow: 0 0 25px rgba(0,0,0,.1); */
+    /* cursor: pointer; */
+    padding: 25px 14px;
+    margin-bottom: 0px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: self-start;
+}
+.services .service-item:hover{
+    background: rgba(255,183,22, 0.01);
+}
+.services .service-item img {
+    max-height: 70px;
+    padding-right: 20px ;
+}
+.services .service-item .service-icon {
+    font-size: 80px;
+    padding-right: 20px ;
+    color: #eac419;
+}
+
+
+.services .service-item h3 {
+    /* margin-top: 30px; */
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 22px;
+    transition: all 250ms ease-in-out;
+    -webkit-transition: all 250ms ease-in-out;
+    text-transform: capitalize;
+}
+/* .services .service-item:hover h3 {
+    color: var(--primary-color);
+} */
+.services .service-item p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    /* color: #606060; */
+    color: #353535db;
+}
+
+.services .service-feature  a{
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    display: block;
+}
+
+.services .service-feature  .play-btn img {
+    transition: .3s transform;
+}
+.services .service-feature  .play-btn img:hover {
+    transform: scale(1.1);
+}
+
+
+.services-carousel .owl-item img.service-item_img {
+    height: 75vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* recommendations */
+.recommendations .recomm-item.card {
+    padding: 25px;
+}
+.recommendations .recomm-item.card p{
+    font-size: 18px;
+}
+
+@media screen and (max-width:850px) {
+    .recommendations .caption p span{
+        display: block;
+        height: 25px;
+    }
+   
+}
+@media screen and (max-width:650px) {
+    .recommendations .recomm-item.card p{
+        font-size: 14px;
     }
 }

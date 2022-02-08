@@ -111,6 +111,14 @@ $(document).ready(function () {
         }
         })
     }
+
+    $('.services-carousel').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: false,
+        items: 1,
+    });
+
     setTimeout(() => {
       $('.right-nav').addClass('animated')
     }, 2000)
